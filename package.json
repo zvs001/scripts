@@ -1,0 +1,32 @@
+{
+  "name": "@zvs001/scripts",
+  "version": "0.0.1",
+  "description": "",
+  "private": false,
+  "main": "index",
+  "bin": {
+    "env-version": "./scripts/env-version.sh",
+    "env-ci-version": "./scripts/env-ci-version.sh",
+    "apply-version": "./scripts/apply-version.sh",
+    "git-check-comments": "./scripts/git/check-comments.sh",
+    "git-check-comment": "./scripts/git/check-comment.sh"
+  },
+  "scripts": {},
+  "keywords": [
+    "script",
+    "ci",
+    "git"
+  ],
+  "author": {
+    "name": "Vladislav Zaynchkovsky",
+    "email": "zvsx001@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/zvs001/scipts"
+  },
+  "dependencies": {
+    "json": "^11.0.0"
+  },
+  "devDependencies": {}
+}
