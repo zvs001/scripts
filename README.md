@@ -1,14 +1,14 @@
 Lib provides scripts for development and CI use
 
-## Install
+# Install
 
 `npm install -D @zvs001/scripts`
 
-## Commands
+# Commands
 
-### Commands for versioning
+## Commands for versioning
 
-#### env-version
+### env-version
 
 Command extracts version from package.json and provides few env variables:
 - `PROJECT_VERSION` # x.x.x (major.minor.patch)`
@@ -22,18 +22,20 @@ source env-version;
 echo $PROJECT_VERSION;
 ```
 
-#### env-ci-version
+### env-ci-version
 
 Replaces `BUNDLE_VERSION` with build number from ci (`$CIRCLE_BUILD_NUM`, `$BITRISE_BUILD_NUMBER`)
 
-#### apply-version
+### apply-version
 
 Replaces version in package.json by version from env variable: `PROJECT_VERSION`
 
+[![npm](https://img.shields.io/npm/v/@zvs001/sripts)](https://www.npmjs.com/package/@zvs001/sripts)
 
-### Commands for git
 
-#### git-check-comment
+## Commands for git
+
+### git-check-comment
 
 Designed for pre-commit script to check if git commits not allowed comments.
 
@@ -42,7 +44,7 @@ Cmd Example:
 git-check-comment mycomment
 ```
 
-#### git-check-comments
+### git-check-comments
 
 Verifies that git will not commit next reserved comments:
 `NOCOMMIT`, `NO-COMMIT`, `BLOCKCOMIT`, `BLOCK-COMMIT`
