@@ -1,14 +1,15 @@
 #!/bin/bash
 
 # REQUIREMENTS
-if ! command -v json &> /dev/null
-then
-    echo "json is required for script. Run next command to install it:" >&2
-    echo "    "
-    echo "    npm i -g json" >&2
-    echo "    "
-    exit 127;
-fi
+## npx should do the trick
+#if ! command -v json &> /dev/null
+#then
+#    echo "json is required for script. Run next command to install it:" >&2
+#    echo "    "
+#    echo "    npm i -g json" >&2
+#    echo "    "
+#    exit 127;
+#fi
 
 if ! command -v sed &> /dev/null
 then
