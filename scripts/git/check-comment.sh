@@ -10,6 +10,6 @@ fi
 # check for not allowed comments
 if git diff --cached | grep "^[+d].*$COMMENT"; then
     echo
-    echo "Adding line containing not allowed comment: $COMMENT"
+    echo "You are trying to commit not allowed comment: $COMMENT"
     exit 1
 fi
