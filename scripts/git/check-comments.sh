@@ -1,4 +1,4 @@
-
+#!/bin/bash
 
 git-check-comment 'NOCOMMIT';
 git-check-comment 'NOCOMIT'; # make it work with typo

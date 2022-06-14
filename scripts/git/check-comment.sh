@@ -1,3 +1,4 @@
+#!/bin/bash
 
 COMMENT=$1 # Expect first argument
 

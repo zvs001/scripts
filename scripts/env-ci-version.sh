@@ -1,3 +1,4 @@
+#!/bin/bash
 
 if [[ ! $PROJECT_VERSION ]]; then
   source env-version

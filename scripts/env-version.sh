@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # REQUIREMENTS
 if ! command -v json &> /dev/null
 then
