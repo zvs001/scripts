@@ -21,7 +21,7 @@ fi
 if [[ -f package.json ]]; then
   echo "Apply version: $PROJECT_VERSION"
   cat package.json | npx json -e "this.version=\"${PROJECT_VERSION}\"" > package.json.tmp
-  mv package.json.tmp package2.json
+  mv package.json.tmp package.json
 else
   echo 'package.json file is not found'
 fi
