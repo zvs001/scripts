@@ -24,8 +24,4 @@ export PROJECT_VERSION=$(cat ./package.json | npx json version) # x.x.x (major.m
 export APP_VERSION=$( echo $PROJECT_VERSION | sed $SED_SEARCH_REGEX"\1/" ) # "major.minor"
 export BUNDLE_VERSION=$( echo $PROJECT_VERSION | sed $SED_SEARCH_REGEX"\2/" ) # "patch" version
 
-# replace patch version
-[[ ! -z "$CIRCLE_BUILD_NUM" ]] && export BUNDLE_VERSION=${CIRCLE_BUILD_NUM}
-[[ ! -z "$BITRISE_BUILD_NUMBER" ]] && export BUNDLE_VERSION=${BITRISE_BUILD_NUMBER}
-
 export PROJECT_VERSION="$APP_VERSION.$BUNDLE_VERSION"

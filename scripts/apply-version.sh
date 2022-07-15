@@ -19,6 +19,7 @@ if [[ ! $PROJECT_VERSION ]]; then
 fi
 
 if [[ -f package.json ]]; then
+  echo "Apply version: $PROJECT_VERSION"
   cat package.json | npx json -e "this.version=\"${PROJECT_VERSION}\"" > package.json.tmp
   mv package.json.tmp package2.json
 else
