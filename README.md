@@ -47,6 +47,6 @@ git-check-comment mycomment
 ### git-check-comments
 
 Verifies that git will not commit next reserved comments:
-`NOCOMMIT`, `NO-COMMIT`, `BLOCKCOMIT`, `BLOCK-COMMIT`
+`NOCOMMIT`, `NO-COMMIT`, `BLOCKCOMIT`, `BLOCK-COMMIT`, `BLOCK`, `STOP`
 
 
