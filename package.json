@@ -1,6 +1,6 @@
 {
   "name": "@zvs001/scripts",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "",
   "private": false,
   "main": "index",
@@ -23,7 +23,7 @@
   },
   "license": "MIT",
   "repository": {
-    "url": "https://github.com/zvs001/scipts"
+    "url": "https://github.com/zvs001/scripts"
   },
   "dependencies": {
     "json": "^11.0.0"
