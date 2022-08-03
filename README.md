@@ -1,5 +1,8 @@
 Lib provides scripts for development and CI use
 
+[![npm](https://img.shields.io/npm/v/@zvs001/scripts)](https://www.npmjs.com/package/@zvs001/scripts)
+
+
 # Install
 
 `npm install -D @zvs001/scripts`
@@ -29,9 +32,6 @@ Replaces `BUNDLE_VERSION` with build number from ci (`$CIRCLE_BUILD_NUM`, `$BITR
 ### apply-version
 
 Replaces version in package.json by version from env variable: `PROJECT_VERSION`
-
-[![npm](https://img.shields.io/npm/v/@zvs001/sripts)](https://www.npmjs.com/package/@zvs001/sripts)
-
 
 ## Commands for git
 

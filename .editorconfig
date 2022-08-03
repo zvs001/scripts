@@ -1,6 +1,6 @@
 root = true
 
-[*.{js,json,ts,tsx,sh}]
+[*.{js,json,ts,sh,md}]
 charset = utf-8
 
 # 2 space indentation
