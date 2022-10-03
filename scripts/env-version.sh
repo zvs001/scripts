@@ -2,23 +2,26 @@
 
 # REQUIREMENTS
 PROJECT_VERSION=''  # x.x.x (major.minor.patch)
+FILE=package.json
 
-if command -v json &> /dev/null
+
+if command -v npx &> /dev/null
 then
-  PROJECT_VERSION=$(cat ./package.json | json version)
-else
+  # requires node installed
+  PROJECT_VERSION=$(cat $FILE | npx json version)
+fi
 
-  if command -v npx &> /dev/null
-  then
-    PROJECT_VERSION=$(cat ./package.json | npx json version)
-  else
-    echo "json is required for script. Run next command to install it:" >&2
-    echo "    "
-    echo "    npm i -g json" >&2
-    echo "    "
-    exit 127;
-  fi
 
+if command -v jq &> /dev/null
+then
+  PROJECT_VERSION=$(jq --raw-output '.version' $FILE)
+fi
+
+
+if [[ ! $PROJECT_VERSION ]]; then
+  echo "You don't have required executables for script." >&2
+  echo "Install one if them: json, npx, jq" >&2
+  exit 127;
 fi
 
 if ! command -v sed &> /dev/null
